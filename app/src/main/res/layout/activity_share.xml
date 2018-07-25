@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b4b4b4"
+    tools:context="com.image.imagenext.imagenextbig.ShareActivity">
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:visibility = "gone"
+        />
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_layout"
+        android:background="#fff"
+        android:layout_below="@+id/toolbar"
+        >
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:id="@+id/view_my_profile"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_margin="11dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    app:civ_border_width="1.1px"
+    app:civ_border_color="#cbcbcb"
+
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_toLeftOf="@+id/sharable_image"
+    android:backgroundTint="@android:color/transparent"
+    android:gravity="top|left"
+    android:padding="5dp"
+    android:id="@+id/status_caption"
+    android:hint="Write a caption..."
+    android:textColorHint="#898888"
+    android:textColor="#000"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/view_my_profile"
+    android:layout_margin="10dp"
+    />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/sharable_image"
+        android:layout_margin="10dp"
+
+        />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/one_layout"
+    android:layout_marginTop="16dp"
+    android:id="@+id/two_layout"
+    android:background="#fff"
+    android:layout_marginBottom="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Add location"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:layout_marginLeft="10dp"
+        android:gravity="left|center_vertical"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/canceladdress"
+
+
+
+        />
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/canceladdress"
+
+        android:src="@drawable/ic_cancel"
+        android:layout_margin="14dp"
+
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two_layout"
+        android:layout_marginTop="11dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Facebook"
+                android:textColor="#757275"
+                android:textSize="18sp"
+                android:drawableLeft="@mipmap/ic_facebook_logo"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical|left"
+
+                />
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="match_parent"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Twitter"
+                android:textSize="18sp"
+                android:gravity="center_vertical|left"
+                android:drawableLeft="@mipmap/ic_twitter_logo"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:drawablePadding="16dp"
+
+                />
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_button1"
+                android:layout_width="match_parent"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Tumbler"
+                android:textSize="18sp"
+                android:gravity="center_vertical|left"
+                android:drawableLeft="@mipmap/ic_tumblr"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:drawablePadding="16dp"
+
+                />
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_button2"
+                android:layout_width="match_parent"
+                android:layout_weight="80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile_image"
+        android:src="@drawable/ic_persomn"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:civ_border_color="#cbcbcb"
+        app:civ_border_width="1.4px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="alexajhones"
+        android:id="@+id/unit_profile_username"
+        android:textSize="19sp"
+        android:padding="12dp"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/three_dots"
+        android:src="@drawable/ic_three_dots"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="14dp"
+
+        />
+
+    <TextView
+        android:id="@+id/unit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/three_dots"
+        android:layout_toStartOf="@+id/three_dots"
+        android:gravity="center"
+        android:text="an hour ago"
+        android:textColor="#979696"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/unit_interest"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/unit_profile_username"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33sp"
+        android:id="@+id/status"
+        android:layout_marginLeft="15dp"
+        android:text="userid"
+        android:gravity="center_vertical|left"
+        android:drawablePadding="2dp"
+        android:drawableLeft="@mipmap/ic_user_name_next"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@+id/unit_interest"
+
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:padding="2dp"
+        android:layout_marginLeft="10dp"
+         android:id="@+id/location"
+        android:drawableLeft="@mipmap/ic_map_post_lic"
+        android:layout_below="@+id/status"
+        android:text="location okay "
+        android:gravity="left|center_vertical"
+        android:textColor="#454444"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000"
+        android:textSize="15.5sp"
+        android:gravity="center_vertical|left"
+        android:drawableStart="@mipmap/ic_status_post"
+        android:id="@+id/status_detail"
+        android:layout_below="@+id/location"
+        android:text="Herre is another awesome pic"
+        android:maxLines="2"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="11dp"
+
+        android:layout_below="@+id/status_detail"
+        >
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@mipmap/ic_image_bookmark"
+            android:id="@+id/unit_save"
+            android:layout_margin="7dp"
+            />
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@mipmap/ic_share"
+            android:id="@+id/unit_share"
+            android:layout_margin="7dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:drawableLeft="@mipmap/ic_image_comment"
+            android:id="@+id/unit_comment"
+            android:layout_margin="7dp"
+            android:text="123"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="124"
+        android:textColor="#000"
+        android:id="@+id/like_post"
+        android:gravity="center_vertical|right"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_image_like"
+         android:textSize="17sp"
+         android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/status_detail"
+
+
+        />
+</RelativeLayout>

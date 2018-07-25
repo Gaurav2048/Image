@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    tools:context="com.image.imagenext.imagenextbig.MainActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/images"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3b565353"
+
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    >
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@mipmap/ic_launcher_ge"
+    android:layout_marginBottom="16dp"
+    android:layout_gravity="center_horizontal"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="username"
+    android:padding="14dp"
+     android:background="#fff"
+    android:paddingLeft="16dp"
+    android:id="@+id/email"
+    android:drawableLeft="@mipmap/ic_email_editt"
+
+    android:textColor="#000"
+    android:textColorHint="#b3b2b2"
+    />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1.2px"
+    android:background="#cbcbcb"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:padding="10dp"
+        android:background="#fff"
+        android:paddingLeft="16dp"
+        android:id="@+id/password"
+
+        android:drawableLeft="@mipmap/ic_lock"
+
+         android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#b3b2b2"
+
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:gravity="center"
+    android:id="@+id/button"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+
+    android:textColor="@android:color/white"
+    android:textSize="15sp"
+    android:layout_marginBottom="6dp"
+    android:backgroundTint="#F9671E"
+    />
+
+    <TextView
+        android:id="@+id/face_bookSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:background="#3B5997"
+        android:paddingLeft="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:drawableStart="@mipmap/ic_facebook"
+        android:gravity="center|center_vertical|left"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Sign in with facebook"
+        android:textColor="#fff"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/twitterignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         android:background="#1BB2E9"
+        android:paddingLeft="60dp"
+        android:drawableStart="@mipmap/ic_twiter"
+        android:gravity="center|center_vertical|left"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Sign in with Twitter"
+        android:textColor="#fff"
+        android:textSize="15sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Forget password"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/forget_passup"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New user?Sign Up"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/signup"
+
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</FrameLayout>

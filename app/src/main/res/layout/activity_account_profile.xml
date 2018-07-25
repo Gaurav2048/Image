@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.image.imagenext.imagenextbig.AccountProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+           >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover_one"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageviewprofile"
+        android:background="#7a3b3a3a"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/profile_pic"
+
+        android:src="@drawable/profile_one"
+         android:layout_gravity="center_horizontal"
+
+         app:civ_border_width="2px"
+          app:civ_border_color="#878787"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gunjan Kalita"
+            android:id="@+id/profile_name"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gunjan Kalita"
+            android:id="@+id/userNmae"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            />
+<RelativeLayout
+     android:layout_width="175dp"
+    android:layout_height="40dp"
+     android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+     android:background="@drawable/back_card"
+
+
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:src="@mipmap/ic_profile_chat_unit"
+        />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Follow"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|left"
+            android:id="@+id/follow"
+android:drawableLeft="@mipmap/ic_follow"
+
+            />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ioexample.toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+         android:background="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:elevation="4dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom"
+        app:layout_collapseMode="pin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:textColor="#D4D4D4"
+                    android:textSize="11sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:maxLines="3"
+                    android:text="Fun loving Loreum ipsum sit amet, con-sectueut adisciping elit, sed do eiusm od tempor incidnctal ut labore et dolore menga "
+                    android:textColor="#000"
+                    android:textSize="14sp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:textSize="13sp"
+                    android:text="Old City Chruch, Central Park, New york. "
+                    android:textColor="#B3B3B3"
+                    android:drawableLeft="@drawable/ic_profile_location_"
+                    android:maxLines="1"
+                    android:gravity="center_vertical|left"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/socialLink"
+                    android:text="fb.com/okayfine"
+                    android:textColor="#7B7B7B"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical|left"
+  android:drawableLeft="@drawable/ic_profile_social"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F1F1F1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:gravity="center_horizontal|bottom"
+                        android:textColor="#9b9b9b"
+                        android:layout_weight="1"
+
+                          />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        android:gravity="center_horizontal|top"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="8345" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#E4E4E4"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Following"
+                          android:gravity="center_horizontal|bottom"
+                        android:layout_weight="1"
+
+                        android:textColor="#A8A8A8"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:textSize="17sp"
+                         android:gravity="center_horizontal|top"
+                        android:layout_weight="1"
+
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text="8345"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+<include layout="@layout/content_account_profile"/>
+
+</android.support.design.widget.CoordinatorLayout>

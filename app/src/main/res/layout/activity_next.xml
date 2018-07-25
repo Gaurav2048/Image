@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#cbcbcb"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.image.imagenext.imagenextbig.NextActivity">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:id="@+id/iamge_profile"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="20dp"
+    app:civ_border_color="#8c8c8c"
+    app:civ_border_width="2.5px"
+    android:src="@mipmap/ic_profile_chat_unit"
+    android:layout_marginTop="20dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/name"
+        android:hint="Name"
+         android:padding="10dp"
+        android:background="#fff"
+        android:paddingLeft="16dp"
+
+        android:drawableLeft="@mipmap/ic_next_user"
+
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#b3b2b2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/username"
+        android:hint="User name"
+         android:padding="10dp"
+        android:background="#fff"
+        android:paddingLeft="16dp"
+
+        android:drawableLeft="@mipmap/ic_user_name_next"
+
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#b3b2b2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/phone_no"
+        android:hint="phone no"
+         android:padding="10dp"
+        android:background="#fff"
+        android:paddingLeft="16dp"
+
+        android:drawableLeft="@mipmap/ic_number"
+
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textColorHint="#b3b2b2"
+        />
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/Submit"
+    android:hint="Submit"
+        android:background="@color/colorPrimary"
+        android:textColorHint="#fff"
+        android:layout_marginBottom="14dp"
+    android:layout_marginTop="14dp"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/OK"
+        android:textColorHint="@color/colorPrimary"
+        android:background="#fff"
+        android:hint="OK"
+         />
+</LinearLayout>

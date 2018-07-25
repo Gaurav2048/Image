@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.image.imagenext.imagenextbig.CommentActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:cardCornerRadius="3dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="#fff"
+            >
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_centerVertical="true"
+    android:src="@mipmap/ic_comment_like"
+    android:layout_marginLeft="10dp"
+
+    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                 android:text="35 people liked it."
+                android:maxLines="2"
+                android:id="@+id/text_loiek_d"
+                android:layout_marginLeft="45dp"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+
+                />
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:id="@+id/image_like"
+                android:src="@mipmap/ic_image_like"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+
+                />
+
+        </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_comment"
+        android:background="#fff"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="52dp"
+
+
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom"
+            android:elevation="6dp"
+android:background="#fff"
+            >
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@drawable/edit_coment_back"
+    android:id="@+id/make_a_comment"
+    android:layout_centerVertical="true"
+    android:drawableLeft="@mipmap/ic_camera_comment"
+    android:drawablePadding="5dp"
+    android:layout_marginLeft="11dp"
+    android:textColor="#000"
+    android:textColorHint="#393939"
+    android:hint="commnet here..."
+    android:layout_toLeftOf="@+id/commit_for_sure"
+    />
+<ImageView
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentRight="true"
+    android:src="@mipmap/ic_send_comment"
+    android:layout_centerVertical="true"
+    android:id="@+id/commit_for_sure"
+
+    />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

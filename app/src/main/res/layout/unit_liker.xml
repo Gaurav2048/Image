@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="35"
+        >
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:id="@+id/liker_face"
+    android:src="@drawable/profile_one"
+    app:civ_border_width="1.5px"
+    android:layout_marginLeft="10dp"
+    app:civ_border_color="#817f7f"
+
+
+    />
+
+        <TextView
+            android:id="@+id/likers_name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|left"
+            android:text="name of him"
+            android:textColor="#000"
+
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/follow_him"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="5dp"
+        android:layout_weight="65"
+        android:background="@drawable/like_text_background"
+        android:drawableLeft="@mipmap/ic_follow_fomlike"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical|left"
+        android:text="FOLLOW"
+
+
+        android:textColor="#000" />
+</LinearLayout>
